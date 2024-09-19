@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrediSAR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestão de projeto de Crédito SAR</h1>
+    </header>
+    
+    <main>
+        <!-- Seção de programas -->
+        <section class="section">
+            <h2>Programas e Projetos</h2>
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <label for="programas">Programas e Projetos</label>
+                    <select id="programas">
+                        <option>Selecione um Programa</option>
+                        <option>Programa Financia AGRO SC</option>
+                        <option>Programa Água no Campo SC</option>
+                        <option>Programa Jovens e Mulheres em AÇÃO</option>
+                        <option>Programa Pronampe AGRO SC</option>
+                        <option>Programa Pronampe Agro SC Emergencial Custeio Agropecuário</option>
+                        <option>Projeto Subvenção Emergencial Suinocultura</option>
+                        <option>Programa Pronampe AGRO SC - Pronampe Leite SC</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="investimento">Tipo de Investimento</label>
+                    <select id="investimento">
+                        <option>Melhoria de sistema Produtivo</option>
+                        <option>Agregação de Valor</option>
+                        <option>Custeio</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Campos de Texto -->
+        <section class="section">
+            <h2>Informações do Beneficiário</h2>
+            <div class="form-group">
+                <input type="text" placeholder="Nome do Beneficiário">
+                <input type="text" placeholder="CPF">
+                <input type="text" placeholder="Inscrição Estadual">
+                <input type="date" placeholder="Data de Nascimento">
+                <input type="text" placeholder="Nome do Empreendimento">
+                <input type="text" placeholder="CNPJ">
+                <input type="text" placeholder="Endereço">
+                <input type="text" placeholder="Telefone">
+                <input type="text" placeholder="Município">
+                <input type="text" placeholder="Nome/Nº do Banco">
+                <input type="text" placeholder="Nº e dígito Agência Bancária">
+                <input type="text" placeholder="Nº e Dígito da Conta Corrente">
+                <input type="text" placeholder="Grupo DAP/CAF">
+                <input type="text" placeholder="Enquadrável no Pronaf">
+                <input type="text" placeholder="SGPE">
+            </div>
+        </section>
+
+        <!-- Seção de Resumo -->
+        <section class="section section-full-width">
+            <h2>Resumo da Proposta de Investimento</h2>
+            <textarea placeholder="Resumo da proposta de investimento" rows="10" maxlength="2000"></textarea>
+        </section>
+
+        <!-- Sub Body Ambiental -->
+        <section class="section">
+            <h2>Característica Ambiental</h2>
+<div class="checkbox-group-ambiental">
+    <h3>Isolamento/recuperação de mata ciliar</h3>
+    <div class="checkbox-details-ambiental">
+        <label><input type="checkbox"> Possui <input type="text" placeholder="Quantidade"></label>
+        <label><input type="checkbox"> Irá fazer <input type="text" placeholder="Quantidade"></label>
+    </div>
+
+    <h3>Isolamento e proteção de nascente</h3>
+    <div class="checkbox-details-ambiental">
+        <label><input type="checkbox"> Possui <input type="text" placeholder="Quantidade"></label>
+        <label><input type="checkbox"> Irá fazer <input type="text" placeholder="Quantidade"></label>
+    </div>
+
+    <h3>Terraceamento</h3>
+    <div class="checkbox-details-ambiental">
+        <label><input type="checkbox"> Possui <input type="text" placeholder="Quantidade"></label>
+        <label><input type="checkbox"> Irá fazer <input type="text" placeholder="Quantidade"></label>
+    </div>
+
+    <h3>Manejo conservacionista</h3>
+    <div class="checkbox-details-ambiental">
+        <label><input type="checkbox"> Possui <input type="text" placeholder="Quantidade"></label>
+        <label><input type="checkbox"> Irá fazer <input type="text" placeholder="Quantidade"></label>
+    </div>
+
+    <h3>Auto Declaração de atendimento</h3>
+    <div class="checkbox-details-ambiental">
+        <label><input type="checkbox"> Possui <input type="text" placeholder="Quantidade"></label>
+        <label><input type="checkbox"> Irá fazer <input type="text" placeholder="Quantidade"></label>
+    </div>
+</div>
+
+            <div class="checkbox-details-existente">
+                <input type="text" placeholder="Cisterna em m³">
+                <input type="text" placeholder="Reservatório de água em m³">
+                <input type="text" placeholder="Energia renovável em kWp">
+            </div>
+        </section>
+
+        <!-- Sub Body Identificação dos Avalistas -->
+        <section class="section">
+            <h2>Identificação dos Avalistas</h2>
+            <div class="form-group">
+                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="CPF">
+                <input type="text" placeholder="Município">
+                <input type="text" placeholder="Descrição do bem em garantia">
+            </div>
+        </section>
+        
+ 
+
+<!-- Seção de Valores -->
+<section class="section valor-section">
+    <div class="valor-container">
+        <div class="valor-item">
+            <label for="valor-proposto"><h2>Valor proposto:</h2></label>
+            <input type="text" class="input-valor" id="valor-proposto" placeholder="R$0,00">
+        </div>
+        <div class="valor-item">
+            <label for="valor-aceito"><h2>Valor aceito:</h2></label>
+            <input type="text" class="input-valor" id="valor-aceito" placeholder="R$0,00">
+        </div>
+    </div>
+</section>
+
+
+        <!-- Seção de Resumo -->
+        <section class="section section-full-width">
+            <h2>Justificativa Técnica da Proposta de Investimento</h2>
+            <textarea placeholder="Justificativa Técnica da Proposta de Investimento" rows="10" maxlength="5000"></textarea>
+        </section>
+    </main>
+
+    <!-- Seção de Botões -->
+    <section class="section buttons-section">
+        <div class="button-group">
+            <button class="btn btn-print">Imprimir Pré Enquadramento</button>
+            <button class="btn btn-print">Imprimir Projeto</button>
+            <button class="btn btn-submit">Enviar para Avaliação</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2024 Seu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
